@@ -12,5 +12,3 @@ Consider adding new configuration "Coverage" (based on Debug configuration) for 
 ## Viewing coverage results
 
 [CoverStory](http://code.google.com/p/coverstory/) is a great OS X application for viewing coverage results.
-
-![](http://coverstory.googlecode.com/svn/site/images/coverstorydemo.png)
