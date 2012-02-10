@@ -1,14 +1,16 @@
 ## Useful links
 
 [Official Jasmine wiki](https://github.com/pivotal/jasmine/wiki)
+
 [Apple docs on UIAutomation instrument](https://developer.apple.com/library/prerelease/ios/#documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Built-InInstruments/Built-InInstruments.html)
+
 [Apple docs on UIAutomation JS classes](https://developer.apple.com/library/prerelease/ios/#documentation/DeveloperTools/Reference/UIAutomationRef/_index.html#//apple_ref/doc/uid/TP40009771)
 
 ## UI Automation
 
 UI Automation has a few issues, to make it work on simulator you need to launch it as follows:
 
-```bash
+```shell
 TPL=/Developer/Platforms/iPhoneOS.platform/Developer/Library/Instruments/PlugIns/AutomationInstrument.bundle/Contents/Resources/Automation.tracetemplate
 APP=/Users/USERNAME/Library/Developer/Xcode/DerivedData/APP-RANDOMHASH/Build/Products/CONFIG-iphonesimulator/APPNAME.app
     
@@ -60,8 +62,9 @@ describe("PocketCasts", function() {
 
 ## Sample output
 
-```bash
-% instruments -t "$TPL" "$APP" -e UIASCRIPT AutomationTests/suite.js                                               ♺ master Ⓓ ⓜ ⓣ2012-02-10 10:07:12 +0000 Start: PocketCasts should show download button for video, that is not downloaded.
+```shell
+% instruments -t "$TPL" "$APP" -e UIASCRIPT AutomationTests/suite.js
+2012-02-10 10:07:12 +0000 Start: PocketCasts should show download button for video, that is not downloaded.
 2012-02-10 10:07:12 +0000 Debug: target.frontMostApp().mainWindow().tableViews()[0].visibleCells()[0].tap()
 2012-02-10 10:07:14 +0000 Debug: target.frontMostApp().navigationBar().leftButton().tap()
 2012-02-10 10:07:14 +0000 Pass: Passed
