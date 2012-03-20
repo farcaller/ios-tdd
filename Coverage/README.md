@@ -1,5 +1,7 @@
 ## Implementing code coverage for iOS projects
 
+Note: the coverage is now broken again, see the [issue](https://github.com/farcaller/ios-tdd/issues/1).
+
 ### Project settings
 
  * **Generate Profiling Code** (*GENERATE_PROFILING_CODE*): YES
