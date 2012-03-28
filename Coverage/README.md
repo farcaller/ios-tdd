@@ -4,7 +4,7 @@
 
  * **Generate Test Coverage Files** (*GCC_GENERATE_TEST_COVERAGE_FILES*): YES
  * **Instrument Program Flow** (*GCC_INSTRUMENT_PROGRAM_FLOW_ARCS*): YES
- * Add a fopen hack to your **application** (not the tests bundle), see below.
+ * Add a fopen hack to your **application** (not the tests bundle), see below. Alternatively you can link to libCoverageFopenFix.a that includes the fix.
 
 Note: you do not need to link to profile_rt in recent Xcode!
 
