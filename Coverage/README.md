@@ -32,4 +32,5 @@ size_t fwrite$UNIX2003( const void *a, size_t b, size_t c, FILE *d )
 }
 ```
 
-Add the code above to any .c file that is going to be linked into your application (must be in app itself, not the tests bundle).
+Add the code above to any .c file that is going to be linked into your application (must be in app itself, not the tests bundle). You can find this file in the source tree above.
+Alternatively, you can link libCoverageFopenFix.a to it. This is a "fat" library that can be used both with for device and the simulator build.
